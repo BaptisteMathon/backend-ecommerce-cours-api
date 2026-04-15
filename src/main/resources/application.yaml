@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ecommerce
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/api-integration
+server:
+  port: 8085
+  servlet:
+    context-path: "/api"
